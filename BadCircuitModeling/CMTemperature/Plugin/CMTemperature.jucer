@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="hh9yG2" name="CMTemperature" projectType="audioplug" companyName="chowdsp"
+              pluginFormats="buildAU,buildStandalone,buildVST,buildVST3" cppLanguageStandard="17"
+              headerPath="../../../../shared" jucerFormatVersion="1">
+  <MAINGROUP id="Bnjbsa" name="CMTemperature">
+    <GROUP id="{18AFF536-49C4-999A-7AE6-0D6A40B8AB12}" name="shared">
+      <FILE id="fHOUEI" name="FreqViz.cpp" compile="1" resource="0" file="../../shared/FreqViz.cpp"/>
+      <FILE id="iehYPa" name="FreqViz.h" compile="0" resource="0" file="../../shared/FreqViz.h"/>
+      <FILE id="zXnXUb" name="KnobsComponent.cpp" compile="1" resource="0"
+            file="../../shared/KnobsComponent.cpp"/>
+      <FILE id="nGeu2W" name="KnobsComponent.h" compile="0" resource="0"
+            file="../../shared/KnobsComponent.h"/>
+      <FILE id="KOVQvi" name="LPF.h" compile="0" resource="0" file="../../shared/LPF.h"/>
+      <FILE id="C5dNnZ" name="PluginEditor.cpp" compile="1" resource="0"
+            file="../../shared/PluginEditor.cpp"/>
+      <FILE id="BplRdG" name="PluginEditor.h" compile="0" resource="0" file="../../shared/PluginEditor.h"/>
+    </GROUP>
+    <GROUP id="{432D70D2-5DAA-BCCE-A0B5-3BD7381A564F}" name="Source">
+      <FILE id="UyktLq" name="CapNoise.h" compile="0" resource="0" file="Source/CapNoise.h"/>
+      <FILE id="AtuErb" name="LPFCircuit.h" compile="0" resource="0" file="Source/LPFCircuit.h"/>
+      <FILE id="KO01Rt" name="NoisyLPF.h" compile="0" resource="0" file="Source/NoisyLPF.h"/>
+      <FILE id="HjhUtL" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="J20HXZ" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" osxArchitecture="Native"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../../Persp3ctive/StudioXDAWplugin/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+    <OSX/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>
